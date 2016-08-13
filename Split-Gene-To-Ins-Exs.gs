@@ -61,7 +61,6 @@ var geneComp = function(compName, indexEnd) {
 }
 
 //Generate a bunch of gene introns/exon objects with predetermined endpoints
-
 function declareGeneComponents() {
   extra = new geneComp('extra', 0);
   ex1 = new geneComp('ex1', 510); 
