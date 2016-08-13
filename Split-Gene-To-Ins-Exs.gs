@@ -2,6 +2,8 @@
 
 //Google script to split a gene found in a Gdoc into component introns/exons based on delineations provided in the assignment
 //Split intron/exons are then pushed into new Gdocs generated ad-hoc in a specified folder
+//This code could be refactored into several gs files to provide better encapsulation, but that's too much work for something
+//  that is only going to be used once. Feel free to do it yourself if you can use this for your own purposes.
 
 //Controller/run function. Execute this to run everything
 function run() {
