@@ -1,5 +1,6 @@
 "use strict"
 
+//@drsaeva
 //Google script to split a gene found in a Gdoc into component introns/exons based on delineations provided in the assignment
 //Split intron/exons are then pushed into new Gdocs generated ad-hoc in a specified folder
 //This code could be refactored into several gs files to provide better encapsulation, but that's too much work for something
