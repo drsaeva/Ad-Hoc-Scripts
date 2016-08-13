@@ -1,9 +1,7 @@
 "use strict"
 
-//Google script to split a gene found in a Gdoc into component 
-//  introns/exons based on delineations provided in the assignment
-//Split intron/exons are then pushed into new Gdocs generated ad-hoc
-//  in a specified folder
+//Google script to split a gene found in a Gdoc into component introns/exons based on delineations provided in the assignment
+//Split intron/exons are then pushed into new Gdocs generated ad-hoc in a specified folder
 
 //Controller/run function. Execute this to run everything
 function run() {
@@ -18,6 +16,7 @@ function run() {
   }
   
 }
+
 //Create ad-hoc Gdoc with passed in name and contents at specified location
 //Feel free to refactor with the output folder's Id as a passed argument
 function makeNewGSheetFromVar(docName, docContents) {
@@ -31,8 +30,7 @@ function makeNewGSheetFromVar(docName, docContents) {
   
 }
 
-//Iterate over array containing intron/exon object references,
-//  splitting intron/exon sequences off from the source document
+//Iterate over array containing intron/exon object references, splitting intron/exon sequences off from the source document
 //  and storing the sequence as the associated object's property
 //Feel free to refactor with the source doc's Id as a passed argument
 function splitGeneintoComponents(geneCompArray) {
@@ -65,7 +63,6 @@ var geneComp = function(compName, indexEnd) {
 //Generate a bunch of gene introns/exon objects with predetermined endpoints
 
 function declareGeneComponents() {
-  
   extra = new geneComp('extra', 0);
   ex1 = new geneComp('ex1', 510); 
   in1 = new geneComp('in1', 1400);
