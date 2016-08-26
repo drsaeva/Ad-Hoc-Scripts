@@ -21,14 +21,14 @@ function makeNewGSheetFromVar(docName, docContents) {
   var text = body.editAsText();
   text.appendText(docContents);
   doc = DriveApp.getFileById(doc.getId());
-  DriveApp.getFolderById('0B6Gxvm3fvF38UnU4TjczNVBJUUU').addFile(doc);
+  DriveApp.getFolderById('insert output folder id here').addFile(doc);
   DriveApp.getRootFolder().removeFile(doc);
   
 }
 
 function splitExonIntoComponents(exonCompArray) {
   //open doc gene seq is stored in, store seq in local var
-  var geneDoc = DocumentApp.openById('1HPSCNapk3eQBKtPeIAchdPdSxv_UZSGz7jgtAUrGGMA');
+  var geneDoc = DocumentApp.openById('insert doc id here');
   var geneDocContents = geneDoc.getBody().getText();
   
   //loop over array
